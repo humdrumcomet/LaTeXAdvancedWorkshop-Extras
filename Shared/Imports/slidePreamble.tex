@@ -1,14 +1,7 @@
 \usepackage[mode=buildnew, subpreambles=false]{standalone}
 \usepackage{import}
-\usepackage{xurl}
 \usepackage{hyperref}
-%\usepackage{amsfonts}
-%\usepackage{amssymb}
-%\usepackage[tbtags]{amsmath}
-\usepackage{fancyhdr}
 \usepackage[T1]{fontenc}
-\usepackage{comment}
-\usepackage{xcolor}
 \usepackage{siunitx}
 \usepackage{chemformula}
 \usepackage{catchfilebetweentags}
@@ -18,9 +11,9 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage[titletoc]{appendix}
-\usepackage{xpatch}
 \usepackage[debug, toc, section=section, acronym, symbols]{glossaries} % Glossaries package
-\usepackage[autoplay]{animate}
+\usepackage{animate}
+\usepackage{datetime2}
 
 \usepackage{tikz}
     \usetikzlibrary{math, arrows, circuits.ee.IEC, positioning, shapes.arrows, shapes.geometric, external}
@@ -46,14 +39,6 @@
                 delta angle=\pgfkeysvalueof{/tikz/@kinky cross}180 ]
           -- (\tikztotarget)}}
       }
-%\usetikzlibrary{external}
-%\tikzexternalize[shell escape=-shell-escape]
-%\tikzset{external/system call={lualatex
-                                %\tikzexternalcheckshellescape -halt-on-error -interaction=batchmode 
-                                %-jobname "\image" "\texsource"}}
-%\usepackage{luatexbase}
-%\usepackage{luacode}
-
 % Package Configurations
 % SI unit pkg conf
 \sisetup{
