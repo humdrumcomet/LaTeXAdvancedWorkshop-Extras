@@ -1,6 +1,5 @@
 % arara: lualatex
 % arara: makeglossaries
-% arara: lualatex
 % arara: biber
 % arara: lualatex
 % arara: lualatex
@@ -9,8 +8,11 @@
 \providecommand{\assetPath}{../../Assets}
 \providecommand{\sharedPath}{../../Shared}
 \providecommand{\plotCodePath}{../../Assets}
+\providecommand{\videoFrames}{240}
+\providecommand{\tikzFrames}{240}
 
 \documentclass{beamer}
+\usetheme[progressbar=frametitle, numbering=fraction]{metropolis}
 
 \input{\importPath/slidePreamble}
 \input{\importPath/glossary}

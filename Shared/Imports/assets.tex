@@ -5,7 +5,7 @@
 %<*n2BeamAnim>
     \begin{figure}[htbp]
         \begin{centering}
-            \animategraphics[controls, buttonsize=1.0em, width=\textwidth]{10}{\assetPath/Images/n2Beam/n2Beam-}{1}{240}
+            \animategraphics[controls, buttonsize=1.0em, width=\textwidth]{12}{\assetPath/Images/n2Beam/n2Beam-}{1}{240}
             \caption{Video of \ch{N2} plasma and beam forming}
             \label{fig:n2PlasBeamVid}
         \end{centering}
@@ -14,8 +14,8 @@
 %<*lorenzAnimate>
     \begin{figure}[htbp]
         \begin{centering}
-            \includestandalone[width=0.85\textwidth]{\assetPath/Images/Tikz/lorenz/lorenzTikzAnim}
-            \caption{A tikz sketch}
+            \includestandalone[width=0.85\textwidth]{\assetPath/Images/Tikz/lorenzAnim/lorenzTikzAnim}
+            \caption{An animation of the Lorenz double scroll}
             \label{fig:animeLorenz}
         \end{centering}
     \end{figure}
@@ -33,16 +33,12 @@
         \end{centering}
     \end{figure}
 %</golAnimate>
-%<*golAnimatePres>
+%<*tikzLorenz>
     \begin{figure}[htbp]
         \begin{centering}
-            %\input{\assetPath/Images/Tikz/gol/gol.tikz}
-            % Currently there is an issue with tikzscale that prevents this from working with pgfplots next to eachother
-            \includestandalone[height=0.7\textheight]{\assetPath/Images/Tikz/gol/gol}
-            %\import{\assetPath/Images/Tikz/gol/}{gol.tikz}
-            %\includestandalone[width=\textwidth]{\assetPath/Images/Tikz/gol/gol}
-            \caption{Game of life running in lua and plotting in tikz}
-            \label{fig:animeGol}
+            \includestandalone[width=0.85\textwidth]{\assetPath/Images/Tikz/lorenz/lorenzTikz}
+            \caption{Lorenz Double Scroll Produced in LuaLatex}
+            \label{fig:lorScr}
         \end{centering}
     \end{figure}
-%</golAnimatePres>
+%</tikzLorenz>

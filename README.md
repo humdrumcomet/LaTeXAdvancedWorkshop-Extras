@@ -34,16 +34,11 @@ This slide deck is based around keeping the code DRY (don't repeat yourself), an
 2. [standalone]()
 3. [catchfilebetweentags]()
 4. [animate]()
-
-This repo has 2 parts, a report and a slide deck.
-Each `.tex` file will compile as standalones (the tikz images, the subfiles, and the
-beamer presentation), but all (but the report) share the same preambles, glossary list, 
-symbols list, acronyms, etc. using the packages `standalone` and `externalize`. The reason for this
-is two-fold
-1. to keep the code DRY (Don't Repeat Yourself)
-2. For compilation simplicity, to give a way to ocmpile pieces independantly to be able to
-chek that they are working correctly
-3. To make sure that any changes propagate throughout all the files
+5. 
+Part of the benefit of this is that large blocks are contained in external files and can be reused in other documents. 
+This includes things like the preamble, equations, glossary terms, symbols, constants, tables, images, and pretty well whatever else you want.
+In addition to this, the document use luaLaTeX, a developing tool that exposes the underlying TeX code via the scripting language lua.
+This opens up some very interesting possibilities because while TeX is itself turing complete, it is a challenging language to code in and may leave some missing some features of modern languages.
 
 Its also setup to be nothing but relative paths, so that if you're synchronizing a folder across
 multiple devices, this won't create an issue.
