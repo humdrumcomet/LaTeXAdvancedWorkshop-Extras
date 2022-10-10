@@ -35,13 +35,14 @@ This slide deck is based around keeping the code DRY (don't repeat yourself), an
 3. [catchfilebetweentags]()
 4. [animate]()
 5. 
-Part of the benefit of this is that large blocks are contained in external files and can be reused in other documents. 
+
+Part of the benefit of breaking apart the code in this way is that large blocks are contained in external files and can be reused in other documents.
 This includes things like the preamble, equations, glossary terms, symbols, constants, tables, images, and pretty well whatever else you want.
-In addition to this, the document use luaLaTeX, a developing tool that exposes the underlying TeX code via the scripting language lua.
+In addition to this, subpart like tikz figures can be compiled independently to check that they work as desired before having to compile the entire document.
+The document also use luaLaTeX, a developing tool that exposes the underlying TeX code via the scripting language lua.
 This opens up some very interesting possibilities because while TeX is itself turing complete, it is a challenging language to code in and may leave some missing some features of modern languages.
 
-Its also setup to be nothing but relative paths, so that if you're synchronizing a folder across
-multiple devices, this won't create an issue.
+Its also setup to use nothing but relative paths, so that if you're synchronizing a folder across multiple devices, this won't create an issue.
 
 ### Requirements
 #### Main
@@ -56,8 +57,9 @@ which must be installed as per the instructions available at the CUBeamer repo. 
 it makes use of figures and assets not distributed with the repo. It is left as additional usage example.
 
 #### Compilation
-The code included in this repo makes use of the LaTeX compilation tool [ARARA](https://github.com/islandoftex/arara)
-but should compile without issue using latexmk, or other compilation tools.
+The code included in this repo makes use of the LaTeX compilation tool [ARARA](https://github.com/islandoftex/arara), and a special directive to allow for redefinition of variables within the file at different stages of compilation.
+
+Must explain this better, and separate out a demo branch that will compile on its own (?)
 
 ## Authors and Organizers
 
