@@ -10,9 +10,10 @@
 \usepackage{catchfilebetweentags}
 \usepackage[style=ieee,backend=biber]{biblatex}
 \usepackage{csvsimple}
-\usepackage{longtable}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage[debug, toc, section=section, acronym, symbols]{glossaries} % Glossaries package
+\usepackage{animate}
 \usepackage{datetime2}
 
 \usepackage{tikz}
@@ -22,8 +23,6 @@
     \usepgfplotslibrary{groupplots}
 \usepackage[siunitx,american voltages, american currents, RPvoltages]{circuitikz}
 
-\usepackage{animate}
-\usepackage[debug, toc, section=section, acronym, symbols]{glossaries} % Glossaries package
 
 %Get rounded wire jumps
 \tikzset{
@@ -55,6 +54,3 @@
 \addbibresource[location=local]{\sharedPath/bibFiles/accelerators.bib}
 
 % Other Configurations
-
-% Alphabetize glossary and acronyms list
-\makeglossaries

@@ -1,18 +1,14 @@
-% arara: lualatex: { shell: true}
-% arara: lualatex: { shell: true}
+% arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{2}', '\providecommand{\tikzFrames}{1}' ] }
+% arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{240}', '\providecommand{\tikzFrames}{60}' ] }
 
 \providecommand{\importPath}{../../../../Shared/Imports}
 \providecommand{\assetPath}{../../../../Assets}
-\providecommand{\codePath}{../../../../Shared/LuaCalcs}
 \providecommand{\sharedPath}{../../../../Shared}
 \providecommand{\plotCodePath}{../../../../Assets}
 
 \documentclass[tikz, crop=false]{standalone}
 
-\input{\codePath/luaDatSetup}
 \input{\importPath/docPreamble}
-\input{\importPath/glossary}
-\input{\importPath/symbols}
 
 \begin{document}
     \directlua{

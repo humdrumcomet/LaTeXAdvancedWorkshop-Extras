@@ -8,9 +8,7 @@ end
 local function print_lorAttrWithEulerMethod(h, npoints, iter, var, option)
     
     if var == nil then 
-        var = {} 
-    --else
-        --print("returning "..var[#var]["x"])
+        var = {}
     end
 
     local x0 = 0.0

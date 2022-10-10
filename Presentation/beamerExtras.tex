@@ -2,7 +2,7 @@
 % arara: makeglossaries
 % arara: biber
 % arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{2}', '\providecommand{\tikzFrames}{1}' ] }
-% arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{240}', '\providecommand{\tikzFrames}{240}' ] }
+% arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{240}', '\providecommand{\tikzFrames}{110}' ] }
 
 %%% Demo report and presentation prepared by Aaron English (humdrumcomet on github)
 %%% A method to prepend a command to the file, trying to figure out how to incorporate it into arara $: lualatex "\\providecommand{\\videoFrames}{10}\\input{beamerExtras}"
@@ -11,7 +11,6 @@
 \providecommand{\assetPath}{../Assets}
 \providecommand{\sharedPath}{../Shared}
 \providecommand{\plotCodePath}{../Assets}
-% \providecommand{\videoFrames}{240} \providecommand{\tikzFrames}{240}
 
 \documentclass{beamer}
 \usetheme[progressbar=frametitle, numbering=fraction]{metropolis}
@@ -33,10 +32,7 @@
     \begin{frame}[noframenumbering, plain]
         \titlepage
     \end{frame}
-    \section{Next Steps}\label{sct:allRes}
-        \begin{frame}
-        \frametitle{Some Glimpses of Even More Possibilities}
-        \end{frame}
+    \section{Some Glimpses of Even More Possibilities}\label{sct:allRes}
         \begin{frame}
             \frametitle{\ch{N2} Plasma and Beam}
             \ExecuteMetaData[\importPath/assets.tex]{n2BeamAnim}

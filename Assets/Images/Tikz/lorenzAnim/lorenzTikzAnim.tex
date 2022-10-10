@@ -1,18 +1,15 @@
-% arara: lualatex: { shell: true}
-% arara: lualatex: { shell: true}
+% arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{2}', '\providecommand{\tikzFrames}{1}' ] }
+% arara: lualatexprepend: { options: [ '\providecommand{\videoFrames}{240}', '\providecommand{\tikzFrames}{60}' ] }
 
 \providecommand{\importPath}{../../../../Shared/Imports}
 \providecommand{\assetPath}{../../../../Assets}
-\providecommand{\codePath}{../../../../Shared/LuaCalcs}
 \providecommand{\sharedPath}{../../../../Shared}
 \providecommand{\plotCodePath}{../../../../Assets}
 
-\documentclass[tikz, crop=false]{standalone}
+\documentclass[tikz, crop=false, float=false]{standalone}
 
-\input{\codePath/luaDatSetup}
 \input{\importPath/docPreamble}
-\input{\importPath/glossary}
-\input{\importPath/symbols}
+
 
 \begin{document}
     \directlua{
@@ -24,19 +21,19 @@
             #5 = lorenz.LorenzAttractor(#2,#3,#4,#5,[[#1]])
         }%
     }
-                        %xmin=-20,
-                        %xmax=20,
-                        %ymin=-20,
-                        %ymax=20,
-                        %zmin=0,
-                        %zmax=60,
     \begin{animateinline}[poster=last, controls, buttonsize=1.0em]{12}
         \multiframe{\tikzFrames}{iTer=0+1}{
                 \begin{tikzpicture}
                     \begin{axis}[grid=both,
                         xlabel=$X$,
                         ylabel=$Y$,
-                        zlabel=$Z$,]
+                        zlabel=$Z$,
+                        xmin=-15,
+                        xmax=15,
+                        ymin=-25,
+                        ymax=25,
+                        zmin=0,
+                        zmax=50,]
                         \addLUADEDplot[color=red,smooth]{0.02}{10}{\iTer}{red1};
                         \addLUADEDplot[color=green,smooth]{0.02}{10}{\iTer}{green1};
                         \addLUADEDplot[color=blue,smooth]{0.02}{10}{\iTer}{blue1};
