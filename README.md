@@ -25,16 +25,15 @@ Instructions for how to use the beamer theme are on the github readme page.
       A quick taste of where else you could take some of these ideas
     - [Course Specific Material](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop-Course-Specific)  
       Some useful course specific material for ELEC
-3. [LaTeX in Different Environments]()  
+3. [LaTeX in Different Environments](https://github.com/humdrumcomet/LaTeXinDifferentEnvironments)  
 4. [Fully Reproducible Documents, Literate Programming, and Experimental LaTeX]()  
 
 ## Overview and Usage
-This slide deck is based around keeping the code DRY (don't repeat yourself), and so uses a couple of packages that we haven't discussed yet.
-1. [import]()
-2. [standalone]()
-3. [catchfilebetweentags]()
-4. [animate]()
-5. 
+This slide deck is based around keeping the code DRY (don't repeat yourself), and so uses a couple of packages that we haven't discussed yet (1, 2, and 3 are described in the [LaTeX in Different Environments](https://github.com/humdrumcomet/LaTeXinDifferentEnvironments) workshop).
+1. [import](https://www.ctan.org/pkg/import)
+2. [standalone](https://www.ctan.org/pkg/standalone)
+3. [catchfilebetweentags](https://www.ctan.org/pkg/catchfilebetweentags)
+4. [animate](https://www.ctan.org/pkg/animate)
 
 Part of the benefit of breaking apart the code in this way is that large blocks are contained in external files and can be reused in other documents.
 This includes things like the preamble, equations, glossary terms, symbols, constants, tables, images, and pretty well whatever else you want.
