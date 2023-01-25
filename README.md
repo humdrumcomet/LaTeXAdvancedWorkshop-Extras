@@ -13,20 +13,22 @@ Instructions for how to use the beamer theme are on the github readme page.
 
 0. [LaTeX Workshops and Tutorial Series](https://github.com/humdrumcomet/LaTeXTutorialSeries)  
    Top level page for the workshop series
-1. [What is LaTeX?](https://github.com/humdrumcomet/LaTeXIntroduction)  
-    An introduction to the typesetting tool
-    - [Let's Code It!](https://github.com/humdrumcomet/LaTeXCodingSession)  
+1. [LaTeX Introduction](https://github.com/humdrumcomet/LaTeXIntroductionPresentation)  
+    An introduction to the typesetting tool LaTeX
+    - [A Demo Document](https://github.com/humdrumcomet/LaTeXIntroduction)  
+      A document showing off the features discussed
+    - [Live Coding Walkthrough](https://github.com/humdrumcomet/LaTeXCodingSession)  
       A starting point for you to prepare your first document during the live coding session
-2. [Some More Advanced Packages](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop)  
-   introduction to different ways of thinking about document preparation and some of LaTeX's more sophisticated tools
-    - [Presentations in LaTeX](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop-Beamer)  
+2. [More Powerful LaTeX Features](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop)  
+   Expanding on different ways of thinking about document preparation and some of LaTeX's more sophisticated tools
+    - [Beamer Demonstration](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop-Beamer)
       An introduction to, and demonstration of, a presentation slide deck prepared with LaTeX using the beamer document class
     - [Additional Concepts Demo](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop-Extras) <sup>(you are here)</sup>  
       A quick taste of where else you could take some of these ideas
     - [Course Specific Material](https://github.com/humdrumcomet/LaTeXAdvancedWorkshop-Course-Specific)  
       Some useful course specific material for ELEC
-3. [LaTeX in Different Environments](https://github.com/humdrumcomet/LaTeXinDifferentEnvironments)  
-4. [Fully Reproducible Documents, Literate Programming, and Experimental LaTeX]()  
+3. [Modularity and LaTeX in Different Environments](https://github.com/humdrumcomet/LaTeXinDifferentEnvironments)  
+4. [Full Reproducibility and Experimental LaTeX Tools]()  
 
 ## Overview and Usage
 This slide deck is based around keeping the code DRY (don't repeat yourself), and so uses a couple of packages that we haven't discussed yet (1, 2, and 3 are described in the [LaTeX in Different Environments](https://github.com/humdrumcomet/LaTeXinDifferentEnvironments) workshop).
@@ -60,7 +62,7 @@ The code included in this repo makes use of the LaTeX compilation tool [ARARA](h
 
 Must explain this better, and separate out a demo branch that will compile on its own (?)
 
-## Authors and Organizers
+## Workshop Series Contributors
 
 * Ghassan Arnouk
 * Alec Bales D'Cruze
